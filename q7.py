@@ -17,6 +17,7 @@ person.append(tuple2)
 person.append(tuple3)
 person.append(tuple4)
 total_sum = 0
+# none = 0
 # average = reduce(lambda x,y: total_sum+(x[2]+y[2]) if x[2] != "None" else total_sum+0, person)
 # average = reduce(lambda accu, person:(accu+ person[2] if type(person[2] != type(1)) else 0 ) , person, 0)
 average = reduce(lambda acc, person: acc + (person[2] if isinstance(person[2], int) else 0), person, 0)
